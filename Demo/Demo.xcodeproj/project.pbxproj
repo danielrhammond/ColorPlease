@@ -12,6 +12,7 @@
 		3D92965219735AD500F62684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D92965019735AD500F62684 /* Main.storyboard */; };
 		3D92965419735AD500F62684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D92965319735AD500F62684 /* Images.xcassets */; };
 		3D92966019735AD500F62684 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92965F19735AD500F62684 /* DemoTests.swift */; };
+		3D92967319735ADB00F62684 /* ColorPlease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D92967219735ADB00F62684 /* ColorPlease.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		3D92965919735AD500F62684 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D92965E19735AD500F62684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D92965F19735AD500F62684 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		3D92967219735ADB00F62684 /* ColorPlease.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ColorPlease.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ColorPlease-blckjzplbzjgusdnalisnbjerswe/Build/Products/Debug-iphoneos/ColorPlease.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D92967319735ADB00F62684 /* ColorPlease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 		3D92963E19735AD500F62684 = {
 			isa = PBXGroup;
 			children = (
+				3D92967219735ADB00F62684 /* ColorPlease.framework */,
 				3D92964919735AD500F62684 /* Demo */,
 				3D92965C19735AD500F62684 /* DemoTests */,
 				3D92964819735AD500F62684 /* Products */,
@@ -325,6 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ColorPlease-blckjzplbzjgusdnalisnbjerswe/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +344,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ColorPlease-blckjzplbzjgusdnalisnbjerswe/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

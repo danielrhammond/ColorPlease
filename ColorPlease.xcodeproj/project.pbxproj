@@ -10,9 +10,24 @@
 		3DCEC5EF1973509000AEC968 /* ColorPlease.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCEC5EE1973509000AEC968 /* ColorPlease.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DCEC5F51973509000AEC968 /* ColorPlease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCEC5E91973509000AEC968 /* ColorPlease.framework */; };
 		3DCEC5FC1973509000AEC968 /* ColorPleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEC5FB1973509000AEC968 /* ColorPleaseTests.swift */; };
+		3DCEC60A197350B600AEC968 /* ColorPlease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEC609197350B600AEC968 /* ColorPlease.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D92966E19735AD500F62684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D92966919735AD500F62684 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D92964719735AD500F62684;
+			remoteInfo = Demo;
+		};
+		3D92967019735AD500F62684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D92966919735AD500F62684 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D92965919735AD500F62684;
+			remoteInfo = DemoTests;
+		};
 		3DCEC5F61973509000AEC968 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3DCEC5E01973509000AEC968 /* Project object */;
@@ -27,15 +42,24 @@
 			remoteGlobalIDString = 3DCEC5E81973509000AEC968;
 			remoteInfo = ColorPlease;
 		};
+		3DCEC6071973509200AEC968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCEC5E01973509000AEC968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCEC5E81973509000AEC968;
+			remoteInfo = ColorPlease;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D92966919735AD500F62684 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 		3DCEC5E91973509000AEC968 /* ColorPlease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorPlease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCEC5ED1973509000AEC968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCEC5EE1973509000AEC968 /* ColorPlease.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorPlease.h; sourceTree = "<group>"; };
 		3DCEC5F41973509000AEC968 /* ColorPleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCEC5FA1973509000AEC968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCEC5FB1973509000AEC968 /* ColorPleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPleaseTests.swift; sourceTree = "<group>"; };
+		3DCEC609197350B600AEC968 /* ColorPlease.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPlease.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D92966A19735AD500F62684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D92966F19735AD500F62684 /* Demo.app */,
+				3D92967119735AD500F62684 /* DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DCEC5DF1973509000AEC968 = {
 			isa = PBXGroup;
 			children = (
+				3D92966919735AD500F62684 /* Demo.xcodeproj */,
 				3DCEC5EB1973509000AEC968 /* ColorPlease */,
 				3DCEC5F81973509000AEC968 /* ColorPleaseTests */,
 				3DCEC5EA1973509000AEC968 /* Products */,
@@ -79,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3DCEC5EE1973509000AEC968 /* ColorPlease.h */,
+				3DCEC609197350B600AEC968 /* ColorPlease.swift */,
 				3DCEC5EC1973509000AEC968 /* Supporting Files */,
 			);
 			path = ColorPlease;
@@ -154,6 +189,7 @@
 			dependencies = (
 				3DCEC5F71973509000AEC968 /* PBXTargetDependency */,
 				3DCEC6061973509200AEC968 /* PBXTargetDependency */,
+				3DCEC6081973509200AEC968 /* PBXTargetDependency */,
 			);
 			name = ColorPleaseTests;
 			productName = ColorPleaseTests;
@@ -188,6 +224,12 @@
 			mainGroup = 3DCEC5DF1973509000AEC968;
 			productRefGroup = 3DCEC5EA1973509000AEC968 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D92966A19735AD500F62684 /* Products */;
+					ProjectRef = 3D92966919735AD500F62684 /* Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DCEC5E81973509000AEC968 /* ColorPlease */,
@@ -195,6 +237,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D92966F19735AD500F62684 /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 3D92966E19735AD500F62684 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D92967119735AD500F62684 /* DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoTests.xctest;
+			remoteRef = 3D92967019735AD500F62684 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DCEC5E71973509000AEC968 /* Resources */ = {
@@ -218,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCEC60A197350B600AEC968 /* ColorPlease.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +301,11 @@
 			isa = PBXTargetDependency;
 			target = 3DCEC5E81973509000AEC968 /* ColorPlease */;
 			targetProxy = 3DCEC6051973509200AEC968 /* PBXContainerItemProxy */;
+		};
+		3DCEC6081973509200AEC968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCEC5E81973509000AEC968 /* ColorPlease */;
+			targetProxy = 3DCEC6071973509200AEC968 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -333,6 +398,7 @@
 		3DCEC6001973509000AEC968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -342,12 +408,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3DCEC6011973509000AEC968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -409,6 +477,7 @@
 				3DCEC6011973509000AEC968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DCEC6021973509000AEC968 /* Build configuration list for PBXNativeTarget "ColorPleaseTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +486,7 @@
 				3DCEC6041973509000AEC968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
