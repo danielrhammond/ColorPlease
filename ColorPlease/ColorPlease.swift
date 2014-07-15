@@ -25,9 +25,9 @@ class ColorPlease {
         }
     }
     
-    func createColor(golden:Bool = true, hue:Float? = nil, saturation:Float = 0.4, brightness:Float = 0.75, alpha:Float = 1.0) -> UIColor {
+    func createColor(golden:Bool = true, hue:Float? = nil, saturation:Float = 0.5, brightness:Float = 0.8, alpha:Float = 1.0) -> UIColor {
         var seed_hue = hue ? hue! : randomFloat()
-        var h = golden ? fmodf(seed_hue + seed_hue / GOLDEN_RATIO_CONJUGATE, 1.0) : seed_hue
+        var h = golden ? fmodf(seed_hue + GOLDEN_RATIO_CONJUGATE, 1.0) : seed_hue
         return UIColor(hue: h, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
