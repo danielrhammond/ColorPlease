@@ -40,4 +40,40 @@ class ColorPlease {
         } while colors.count < count
         return colors
     }
+    
+    // via http://www.easyrgb.com/index.php?X=MATH&H=02#text2
+    func RGBtoXYZ(red: Float, green: Float, blue: Float) -> (x: Float, y: Float, z: Float) {
+        var r = red
+        if red > 0.04045 {
+            r = pow(( ( r + 0.055 ) / 1.055 ), 2.4)
+        } else {
+            r = r / 12.92
+        }
+        var g = green
+        if g > 0.04045 {
+            g = pow(( ( g + 0.055 ) / 1.055 ), 2.4)
+        } else {
+            g = g / 12.92
+        }
+        
+        var b = blue
+        if b > 0.04045 {
+            b = pow(( ( b + 0.055 ) / 1.055 ), 2.4)
+        } else {
+            b = b / 12.92
+        }
+        
+        r *= 100
+        g *= 100
+        b *= 100
+        
+        let x = r * 0.4124 + g * 0.3576 + b * 0.1805
+        let y = r * 0.2126 + g * 0.7152 + b * 0.07222
+        let z = r * 0.0193 + g * 0.1192 + b * 0.8505
+        
+        return (x,y,z)
+    }
+    
+    func XYZtoCIELAB(x: Float, y: Float, z: Float) {
+    }
 }
