@@ -11,7 +11,7 @@ import ColorPlease
 
 class ViewController: UIViewController {
 
-    let colorGenerator = ColorPlease()
+    let colorGenerator = ColorPlease.Please()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +26,14 @@ class ViewController: UIViewController {
             view.removeFromSuperview()
         }
         let colors = colorGenerator.createColorScheme(count:6)
-        let swatchHeight: CGFloat = CGRectGetHeight(self.view.bounds) / Float(colors.count)
+        
+        var swatchHeight:Float = Float(self.view.bounds.size.height)
+        swatchHeight = Float(swatchHeight) / Float(colors.count)
         for (i, color) in enumerate(colors) {
             let swatch = UIView()
             swatch.backgroundColor = color
-            let yOrigin: CGFloat = swatchHeight * Float(i)
-            swatch.frame = CGRectMake(CGRectGetMinX(self.view.bounds), yOrigin, CGRectGetWidth(self.view.bounds), swatchHeight)
+            let yOrigin:Float = swatchHeight * Float(i)
+            swatch.frame = CGRectMake(CGRectGetMinX(self.view.bounds), CGFloat(yOrigin), CGRectGetWidth(self.view.bounds), CGFloat(swatchHeight))
             self.view.addSubview(swatch)
         }
     }
